@@ -2,13 +2,11 @@ package com.cypressworks.proguardissue
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), Mixin {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        View(this).holder(::Holder)
+        foo()
     }
 
-    class Holder(val v: View)
 }

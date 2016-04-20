@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 buildscript {
-    ext.kotlin_version = '1.0.0-rc-1017'
+    ext.kotlin_version = '1.0.2-eap-44'
     repositories {
         jcenter()
         maven { url "http://dl.bintray.com/kotlin/kotlin-eap" }
@@ -29,11 +29,12 @@ android {
         release {
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
     }
-
+	
+	compileOptions.incremental = false
 }
 
 dependencies {
