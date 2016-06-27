@@ -5,7 +5,7 @@ interface Mixin {
         bar()
     }
 
-    private fun MainActivity.bar() {
+    /* private */ fun MainActivity.bar() {
         runOnUiThread { }
     }
 

@@ -7,6 +7,10 @@ class MainActivity : AppCompatActivity(), Mixin {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         foo()
+
+        doAsync {
+            1 + 1
+        }
     }
 
 }
