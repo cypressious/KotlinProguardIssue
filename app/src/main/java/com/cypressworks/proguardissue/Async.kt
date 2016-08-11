@@ -2,7 +2,7 @@ package com.cypressworks.proguardissue
 
 
 fun <T> T.doAsync(
-        exceptionHandler: ((Throwable) -> Unit)? = null
+        exceptionHandler: ((Throwable) -> Unit)?
 ) {
     try {
         println()
