@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 buildscript {
-    ext.kotlin_version = '1.0.3-eap-58'
+    ext.kotlin_version = '1.0.3'
     repositories {
         jcenter()
         maven { url "http://dl.bintray.com/kotlin/kotlin-eap" }
