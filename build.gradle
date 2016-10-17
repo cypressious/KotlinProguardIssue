@@ -5,17 +5,15 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0-beta1'
-        classpath files('proguard5.3beta.jar')
+        classpath 'com.android.tools.build:gradle:2.2.1'
     }
 
-    configurations.classpath.exclude group: 'net.sf.proguard'
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven { url "http://dl.bintray.com/kotlin/kotlin-eap" }
+        maven { url "http://dl.bintray.com/kotlin/kotlin-dev" }
     }
 }
 
