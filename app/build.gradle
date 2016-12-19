@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 buildscript {
-    ext.kotlin_version = '1.0.2-eap-44'
+    ext.kotlin_version = '1.0.6-eap-+'
     repositories {
         jcenter()
         maven { url "http://dl.bintray.com/kotlin/kotlin-eap" }
@@ -13,13 +13,13 @@ buildscript {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
 
     defaultConfig {
         applicationId "com.cypressworks.jrebelottocrash"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -39,7 +39,7 @@ android {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support:appcompat-v7:25.+'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 
